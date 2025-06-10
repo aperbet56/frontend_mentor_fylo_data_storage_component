@@ -189,3 +189,49 @@ body {
     top: -0.6rem;
     margin-left: 0.4rem;
 }
+
+/**** Responsive design ****/
+
+@media screen and (max-width: 991px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 0 2rem;
+    }
+
+    .main__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control__container,
+    .storage__container {
+        max-width: 100%;
+    }
+
+    .control__container {
+        box-shadow: 0 -10px 100px rgba(0, 0, 0, 0.4);
+    }
+
+    .storage__container {
+        margin-left: 0;
+        margin-top: 1.1rem;
+        padding-bottom: 3.7rem;
+        box-shadow: 0 10px 100px rgba(0, 0, 0, 0.4);
+    }
+
+    .space__left {
+        top: unset;
+        right: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2.7rem;
+        width: max-content;
+        border-bottom-right-radius: 9px;
+    }
+
+    .space__left::after {
+        display: none;
+    }
+}
