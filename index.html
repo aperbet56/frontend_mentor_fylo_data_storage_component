@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <!-- Importation de la favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Importation des styles -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Début du main -->
+    <main class="main__content">
+        <!-- Début div control container-->
+        <div class="control__container container">
+            <a href="#"><img src="images/logo.svg" alt="Fylo" class="fylo__icon"></a>
+            <div class="actions">
+              <a href="#" class="icon">
+                <img src="images/icon-document.svg" alt="Document">
+              </a>
+              <a href="#"  class="icon">
+                <img src="images/icon-folder.svg" alt="Folder">
+              </a href="#" >
+              <a href="#"  class="icon">
+                <img src="images/icon-upload.svg" alt="Upload">
+              </a href="#" >
+            </div>
+        </div>
+        <!-- Fin div control container -->
+
+        <!-- Début div storage container -->
+        <div class="storage__container container">
+            <p class="information pale__text">You’ve used <strong class="amount">815 GB</strong> of your storage</p>
+            <div class="progress__bar">
+              <div class="fill"></div>
+            </div>
+            <div class="values">
+              <strong class="progress__value pale__text">0 GB</strong>
+              <strong class="progress__value pale__text">1000 GB</strong>
+            </div>
+            <div class="space__left">
+              <h2 class="gb">185<span class="gb__left"> Gb left</span></h2>
+            </div>
+        </div>
+        <!-- Fin div storage container -->
+    </main>
+    <!-- Fin du main-->
+  </body>
+</html>
