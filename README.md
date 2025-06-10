@@ -1,5 +1,7 @@
 ## FRONTEND MENTOR | FYLO DATA STORAGE COMPONENT
 
+![Design preview for the fylo data storage component project](./design/desktop-preview.jpg)
+
 ## Le challenge
 
 Mon défi consiste à créer ce composant de stockage de données et à le rendre aussi proche que possible de la maquette.
