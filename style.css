@@ -1,0 +1,191 @@
+/**** Importation de la police Raleway ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Variables css ****/
+
+:root {
+    --white: #ffffff;
+    --dark-blue: hsl(228, 56%, 26%);
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+    --gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+
+body,
+.main__content,
+.actions,
+.values {
+    display: flex;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg-desktop.svg) no-repeat, linear-gradient(var(--very-dark-blue), var(--very-dark-blue));
+    background-position: center 50vh;
+    background-size: 100% 50%;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+
+/**** main ****/
+
+.main__content {
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.container {
+    background-color: var(--dark-blue);
+    padding: 2.5rem;
+    border-radius: 9px;
+}
+
+/**** First component ****/
+
+.control__container {
+    max-width: 300px;
+    width: 100%;
+    border-top-right-radius: 85px;
+    box-shadow: -10px 10px 60px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.fylo__icon {
+    width: 125px;
+}
+
+.actions {
+    margin-top: 1.6rem;
+    margin-left: -1px;
+}
+
+.icon {
+    background-color: var(--very-dark-blue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    margin-right: 0.8rem;
+    border: 2px solid var(--dark-blue);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    border-color: var(--pale-blue);
+}
+
+.icon img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+}
+
+.icon:first-child img {
+    width: 18px;
+}
+
+/**** Second component ****/
+
+.storage__container {
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    margin-left: 1.9rem;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, .3);
+}
+
+.pale__text {
+    color: var(--pale-blue);
+}
+
+.values {
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.progress__bar,
+.fill {
+    border-radius: 10px;
+}
+
+.progress__bar {
+    width: 100%;
+    height: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 0.2rem;
+    margin: 1.1rem 0 0.6rem 0;
+}
+
+.progress__bar .fill {
+    width: 75%;
+    height: 100%;
+    background-image: var(--gradient);
+    position: relative;
+}
+
+.progress__bar .fill::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.1rem;
+    transform: translateY(-50%);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.space__left {
+    position: absolute;
+    top: -3.4rem;
+    right: 2.3rem;
+    background-color: var(--white);
+    border-radius: 9px 9px 0 9px;
+    padding: 0.9rem 1.8rem;
+}
+
+.space__left::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 33px 0;
+    border-color: transparent var(--white) transparent transparent;
+}
+
+.gb {
+    font-size: 2.9rem;
+    color: var(--very-dark-blue);
+}
+
+.gb__left {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    position: relative;
+    top: -0.6rem;
+    margin-left: 0.4rem;
+}
