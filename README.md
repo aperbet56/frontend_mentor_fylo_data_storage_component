@@ -6,7 +6,7 @@ Mon défi consiste à créer ce composant de stockage de données et à le rendr
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/frontend_mentor_fylo_data_storage_component/
 
 ## Projet développé avec
 
